@@ -51,6 +51,7 @@ pub(crate) fn layout_str_to_enum(name: &str) -> LayoutName {
         "recursive_with_poseidon" => LayoutName::recursive_with_poseidon,
         "all_solidity" => LayoutName::all_solidity,
         "all_cairo" => LayoutName::all_cairo,
-        _ => LayoutName::plain,
+        "dynamic" => LayoutName::dynamic,
+        _ => LayoutName::all_cairo,
     }
 }

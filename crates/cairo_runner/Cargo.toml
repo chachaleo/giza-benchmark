@@ -6,13 +6,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-cairo1-run = { git = "https://github.com/lambdaclass/cairo-vm", rev = "c5839fd" }
-cairo-vm = { git = "https://github.com/lambdaclass/cairo-vm.git", rev = "c5839fd", features = [
-    "std",
-    "cairo-1-hints",
-    "arbitrary",
-] }
-cairo-lang-sierra = { version = "2.6.3", default-features = false }
+cairo1-run = { git = "https://github.com/lambdaclass/cairo-vm", rev = "v1.0.0-rc2" }
+cairo-vm = { git = "https://github.com/lambdaclass/cairo-vm", rev = "v1.0.0-rc2", features = ["std", "cairo-1-hints","arbitrary"] }
+
+cairo-lang-sierra = { version = "2.6.4", default-features = false }
 bincode = { version = "2.0.0-rc.3", default-features = false, features = [
     "serde",
 ] }
+
